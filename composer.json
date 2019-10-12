@@ -16,8 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "5.8.*"
+        "php": "^7.1"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
@@ -26,7 +25,10 @@
     "autoload": {
         "psr-4": {
             "Jakerw\\Utility\\": "src"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

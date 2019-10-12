@@ -3,6 +3,7 @@
 namespace Jakerw\Utility;
 
 use Illuminate\Support\ServiceProvider;
+use Jakerw\Utility\Commands\CreateSkeleton;
 
 class UtilityServiceProvider extends ServiceProvider
 {
@@ -38,11 +39,32 @@ class UtilityServiceProvider extends ServiceProvider
             /*$this->publishes([
                 __DIR__.'/../resources/lang' => resource_path('lang/vendor/utility'),
             ], 'lang');*/
-
+            
+            // Register Helper
+            //$this->registerHelpers();
             // Registering package commands.
-            // $this->commands([]);
+            $this->commands([
+                CreateSkeleton::class,
+            ]);
         }
     }
+
+    /**
+     * Register helpers file
+     */
+    // public function registerHelpers()
+    // {
+    //     $file = __DIR__.'/Helpers/Helpers.php';
+    //     //dd( $file);
+    //     // Load the helpers in app/Http/helpers.php
+    //     if (file_exists( $file ))
+    //     {
+    //         //dd('file exists');
+    //         require_once $file;
+    //     }
+
+        
+    // }
 
     /**
      * Register the application services.
