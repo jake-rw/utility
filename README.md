@@ -1,4 +1,4 @@
-# Very short description of the package
+# A utility tool for the install legwork
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jakerw/utility.svg?style=flat-square)](https://packagist.org/packages/jakerw/utility)
 [![Build Status](https://img.shields.io/travis/jakerw/utility/master.svg?style=flat-square)](https://travis-ci.org/jakerw/utility)
